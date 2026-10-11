@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: OmniChat
+
+bridge:
+  telegram:
+    bot-token: ${TELEGRAM_BOT_TOKEN}
+    bot-username: ${TELEGRAM_BOT_NAME}
+
+  channels:
+    - name: "Main group"
+      telegram-id: ${TELEGRAM_CHANNEL_ID}
+
+    - name: "Test group"
+      telegram-id: ""
